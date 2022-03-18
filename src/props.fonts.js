@@ -14,12 +14,14 @@ export default {
   '--font-weight-9': '900',
 
   '--font-lineheight-00': '.95',
-  '--font-lineheight-0': '1.1',
-  '--font-lineheight-1': '1.25',
-  '--font-lineheight-2': '1.375',
-  '--font-lineheight-3': '1.5',
-  '--font-lineheight-4': '1.75',
-  '--font-lineheight-5': '2',
+  '--font-lineheight-1': '1';
+  '--font-lineheight-2': '1.176470588';
+  '--font-lineheight-3': '1.181818182';
+  '--font-lineheight-4': '1.214285714';
+  '--font-lineheight-5': '1.25';
+  '--font-lineheight-6': '1.277777778';
+  '--font-lineheight-7': '1.5';
+  '--font-lineheight-8': '1.5625';
 
   // '--font-relative-lineheight-00': 'calc(1rem + .5ch)',
   // '--font-relative-lineheight-0': 'calc(1rem + .75ch)',
@@ -34,21 +36,21 @@ export default {
   '--font-letterspacing-1': '.025em',
   '--font-letterspacing-2': '.050em',
   '--font-letterspacing-3': '.075em',
-  '--font-letterspacing-4': '.150em',
-  '--font-letterspacing-5': '.500em',
-  '--font-letterspacing-6': '.750em',
-  '--font-letterspacing-7': '1em',
+  '--font-letterspacing-4': '.100em',
+  '--font-letterspacing-5': '.150em',
+  '--font-letterspacing-6': '.500em',
+  '--font-letterspacing-7': '.750em',
+  '--font-letterspacing-8': '1em',
 
   '--font-size-00': '.5rem',
   '--font-size-0': '.75rem',
   '--font-size-1': '1rem',
-  '--font-size-2': '1.1rem',
-  '--font-size-3': '1.25rem',
+  '--font-size-2': '1.25rem',
+  '--font-size-3': '1.375rem',
   '--font-size-4': '1.5rem',
-  '--font-size-5': '2rem',
-  '--font-size-6': '2.5rem',
-  '--font-size-7': '3rem',
-  '--font-size-8': '3.5rem',
+  '--font-size-5': '1.75rem',
+  '--font-size-6': '2.125rem',
+  '--font-size-7': '2.25rem',
 
   '--font-size-fluid-0': 'clamp(.75rem, 2vw, 1rem)',
   '--font-size-fluid-1': 'clamp(1rem, 4vw, 1.5rem)',

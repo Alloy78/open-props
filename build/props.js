@@ -39,10 +39,10 @@ const mainbundle = {
 
 const individual_colors = {
   'props.brand.css': OpenColors.Brand,
-  'props.grey.css': OpenColors.Grey,
-  'props.green.css': OpenColors.Green,
-  'props.red.css': OpenColors.Red,
-  'props.blue.css': OpenColors.Blue,
+//   'props.grey.css': OpenColors.Grey,
+//   'props.green.css': OpenColors.Green,
+//   'props.red.css': OpenColors.Red,
+//   'props.blue.css': OpenColors.Blue,
 //   'props.pink.css': OpenColors.Pink,
 //   'props.grape.css': OpenColors.Grape,
 //   'props.violet.css': OpenColors.Violet,
@@ -56,10 +56,10 @@ const individual_colors = {
 
 const individual_colors_hsl = {
   'props.brand-hsl.css': ColorsHSL.Brand,
-  'props.grey-hsl.css': ColorsHSL.Grey,
-  'props.green-hsl.css': ColorsHSL.Green,
-  'props.red-hsl.css': ColorsHSL.Red,
-  'props.blue-hsl.css': ColorsHSL.Blue,
+//   'props.grey-hsl.css': ColorsHSL.Grey,
+//   'props.green-hsl.css': ColorsHSL.Green,
+//   'props.red-hsl.css': ColorsHSL.Red,
+//   'props.blue-hsl.css': ColorsHSL.Blue,
 //   'props.pink-hsl.css': ColorsHSL.Pink,
 //   'props.grape-hsl.css': ColorsHSL.Grape,
 //   'props.violet-hsl.css': ColorsHSL.Violet,

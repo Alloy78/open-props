@@ -14,14 +14,14 @@ export default {
   '--font-weight-9': '900',
 
   '--font-lineheight-00': '.95',
-  '--font-lineheight-1': '1';
-  '--font-lineheight-2': '1.176470588';
-  '--font-lineheight-3': '1.181818182';
-  '--font-lineheight-4': '1.214285714';
-  '--font-lineheight-5': '1.25';
-  '--font-lineheight-6': '1.277777778';
-  '--font-lineheight-7': '1.5';
-  '--font-lineheight-8': '1.5625';
+  '--font-lineheight-1': '1',
+  '--font-lineheight-2': '1.176470588',
+  '--font-lineheight-3': '1.181818182',
+  '--font-lineheight-4': '1.214285714',
+  '--font-lineheight-5': '1.25',
+  '--font-lineheight-6': '1.277777778',
+  '--font-lineheight-7': '1.5',
+  '--font-lineheight-8': '1.5625',
 
   // '--font-relative-lineheight-00': 'calc(1rem + .5ch)',
   // '--font-relative-lineheight-0': 'calc(1rem + .75ch)',

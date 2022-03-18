@@ -22,7 +22,7 @@ export const buildPropsStylesheet = ({filename,props}, {selector,prefix}) => {
       appendedMeta += keyframes
     }
 
-    file.write(`  ${prop}: ${val};\n`)
+    file.write(`    ${prop}: ${val};\n`)
   })
 
   if (filename.includes('shadows')) {

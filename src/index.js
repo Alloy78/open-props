@@ -12,8 +12,8 @@ import SVG from './props.svg.js'
 import Zindex from './props.zindex.js'
 
 const camelize = text => {
-  text = text.replace(/[-]+(.)?/g, (_, c) => c 
-    ? c.toUpperCase() 
+  text = text.replace(/[-]+(.)?/g, (_, c) => c
+    ? c.toUpperCase()
     : '')
   return text.substr(0, 1).toLowerCase() + text.substr(1)
 }

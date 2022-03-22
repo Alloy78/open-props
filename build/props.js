@@ -2,6 +2,7 @@ import fs from 'fs'
 
 import Animations from '../src/props.animations.js'
 import Sizes from '../src/props.sizes.js'
+import Media from '../src/props.media.js'
 import * as OpenColors from '../src/props.colors.js'
 import * as ColorsHSL from '../src/props.colors-hsl.js'
 import Fonts from '../src/props.fonts.js'
@@ -14,6 +15,7 @@ import SVG from '../src/props.svg.js'
 import Zindex from '../src/props.zindex.js'
 
 import {buildPropsStylesheet} from './to-stylesheet.js'
+import {buildListStylesheet} from './to-stylesheet-list.js'
 import {toJSON} from './to-json.js'
 import {toTokens} from './to-tokens.js'
 import {toFigmaTokens} from './to-figmatokens.js'
@@ -117,3 +119,8 @@ Object.keys(mainbundle).forEach(filename => {
   entry.write(`@import '${filename}';\n`)
 })
 entry.end()
+
+// gen custom media.css
+Object.entries({'props.media.css': Media}).forEach(([filename, props]) => {
+    buildListStylesheet({filename, props}, {selector, prefix})
+})

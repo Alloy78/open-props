@@ -4,6 +4,7 @@ import fs from 'fs'
 
 const path = './src/';
 const filesToRemoveBase = [
+    // '_jitprops.css',// needed for postcss-jit-props in order to remove unused props
     'index.css',
     'props.animations.css',
     'props.aspects.css',
@@ -53,12 +54,28 @@ const filesToRemoveBaseTokens = [
     'open-props.figma-tokens.json',
     'open-props.figma-tokens.sync.json',
     'open-props.tokens.json',
+    'animations.min.css',
+    'aspects.min.css',
+    'borders.min.css',
+    'buttons.min.css',
+    'colors-hsl.min.css',
+    'colors.min.css',
+    'easings.min.css',
+    'fonts.min.css',
+    'gradients.min.css',
+    'media.min.css',
+    'normalize.min.css',
+    'open-props.min.css',
+    'shadows.min.css',
+    'sizes.min.css',
+    'supports.min.css',
+    'zindex.min.css',
 ]
 
 filesToRemoveBase.forEach(file => {
     fs.unlink(`${path}${file}`, (err) => {
       if (err) {
-        console.error(err)
+        // console.error(err)
         return
       }
     //   console.log('file removed');
@@ -68,7 +85,7 @@ filesToRemoveBase.forEach(file => {
 filesToRemoveBaseTokens.forEach(file => {
     fs.unlink(`./${file}`, (err) => {
       if (err) {
-        console.error(err)
+        // console.error(err)
         return
       }
     //   console.log('file removed');

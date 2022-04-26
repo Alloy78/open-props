@@ -15,8 +15,8 @@ module.exports = {
       stage: 0,
       autoprefixer: false,
       features: {
-        'logical-properties-and-values': false, 
-        'prefers-color-scheme-query': false, 
+        'logical-properties-and-values': false,
+        'prefers-color-scheme-query': false,
         'gap-properties': false,
         'custom-properties': false,
         'place-properties': false,

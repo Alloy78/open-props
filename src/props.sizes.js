@@ -39,13 +39,18 @@ export default {
   '--size-fluid-9': 'clamp(15rem, calc(30 * var(--size-vw, 1vw)), 20rem)',
   '--size-fluid-10': 'clamp(20rem, calc(40 * var(--size-vw, 1vw)), 30rem)',
 
-  '--size-content-1': '20ch',
-  '--size-content-2': '45ch',
-  '--size-content-3': '60ch',
+  '--size-content-1': '20ch',/* ~172px */
+  '--size-content-2': '30ch',/* ~258px */
+  '--size-content-3': '35ch',/* ~301px */
+  '--size-content-4': '45ch',/* ~387px */
+  '--size-content-5': '52ch',/* ~447px */
+  '--size-content-6': '60ch',/* ~516px */
+  '--size-content-7': '75ch',/* ~645px around the max for content */
 
   '--size-header-1': '20ch',
   '--size-header-2': '25ch',
   '--size-header-3': '35ch',
+  '--size-header-4': '45ch',
 
   '--size-xxs': `${240 / 16}rem`,
   '--size-xs': `${360 / 16}rem`,

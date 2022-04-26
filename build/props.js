@@ -16,7 +16,6 @@ import Zindex from '../src/props.zindex.js'
 
 import {buildPropsStylesheet} from './to-stylesheet.js'
 import {buildListStylesheet} from './to-stylesheet-list.js'
-import {toJSON} from './to-json.js'
 import {toTokens} from './to-tokens.js'
 import {toFigmaTokens} from './to-figmatokens.js'
 
@@ -74,30 +73,28 @@ const individual_colors_hsl = {
 }
 
 // gen design tokens
-const jsonbundle = toJSON({
-  ...Object.values(individual_colors)
-      .reduce((colors, color) =>
-        Object.assign(colors, color), {}),
-  ...Sizes,
-  ...Easings,
-  ...Zindex,
-  ...Aspects,
-  ...Gradients,
-  ...Borders,
-})
+// const jsonbundle = Object.entries({
+//   ...Object.assign({}, ...Object.values(individual_colors)),
+//   ...Sizes,
+//   ...Easings,
+//   ...Zindex,
+//   ...Aspects,
+//   ...Gradients,
+//   ...Borders,
+// }).reverse()
 
-const designtokens = toTokens(jsonbundle)
-const JSONtokens = fs.createWriteStream('../open-props.tokens.json')
-JSONtokens.end(JSON.stringify(Object.fromEntries(designtokens), null, 2))
+// const designtokens = toTokens(jsonbundle)
+// const JSONtokens = fs.createWriteStream('../open-props.tokens.json')
+// JSONtokens.end(JSON.stringify(Object.fromEntries(designtokens), null, 2))
 
 // gen figma tokens
-const figmatokens = toFigmaTokens(jsonbundle)
-const FigmaTokens = fs.createWriteStream('../open-props.figma-tokens.json')
-FigmaTokens.end(JSON.stringify(figmatokens, null, 2))
+// const figmatokens = toFigmaTokens(jsonbundle)
+// const FigmaTokens = fs.createWriteStream('../open-props.figma-tokens.json')
+// FigmaTokens.end(JSON.stringify(figmatokens, null, 2))
 
-const figmatokensSYNC = { 'open-props': { ...figmatokens } }
-const FigmaTokensSync = fs.createWriteStream('../open-props.figma-tokens.sync.json')
-FigmaTokensSync.end(JSON.stringify(figmatokensSYNC, null, 2))
+// const figmatokensSYNC = { 'open-props': { ...figmatokens } }
+// const FigmaTokensSync = fs.createWriteStream('../open-props.figma-tokens.sync.json')
+// FigmaTokensSync.end(JSON.stringify(figmatokensSYNC, null, 2))
 
 // gen prop variants
 Object.entries({...mainbundle, ...individual_colors, ...individual_colors_hsl}).forEach(([filename, props]) => {
